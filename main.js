@@ -20,6 +20,7 @@ function attackEnemy() {
   enemy.health -= damage;
   console.log("Enemy's Health:" + enemy.health);
   console.log(`Enemy took ${damage} damage`)
+  document.getElementById('enemy-health').innerHTML = enemy.health
 }
 
 function attackPlayer() {
@@ -28,14 +29,17 @@ function attackPlayer() {
   player.health -= damage;
   console.log("Your Health:" + player.health);
   console.log(`You took ${damage} damage`)
+  document.getElementById('hero-health').innerHTML = player.health
 }
 
 function isAlive() {
   if(player.health <= 0) {
     console.log('You have been defeated!')
+    alert('You have been defeated!')
     attackButton.removeEventListener('click', clickAttack)
   } else if(enemy.health <= 0) {
     console.log('The enemy has been defeated!')
+    alert('The enemy has been defeated!')
     attackButton.removeEventListener('click', clickAttack)
   }
   else {
