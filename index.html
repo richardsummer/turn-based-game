@@ -8,57 +8,66 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Turn Based Game</title>
   </head>
-  <body class="container">
-    <h1 class="row">Turn Based Game</h1>
-
-    <div class="row">
-      <section class="col">
-        <p>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Choose Your Hero
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-          <div class="card card-body d-inline-flex hero-list">
-            <div class="hero col">
-              <img src="./images/knight.jpg" alt="Knight">
-            </div>
-            <div class="hero col">
-              <img src="./images/elf.png" alt="Elf">
-            </div>
-            <div class="hero col">
-              <img src="./images/dwarf.jpg" alt="Dwarf">
+  <body>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <h1 class="col text-center">Turn Based Game</h1>
+      </div>
+      <div id="fight" class="row d-flex">
+        <section class="">
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Choose Your Hero
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body d-inline-flex hero-list">
+              <div class="hero col">
+                <img src="./images/knight.jpg" alt="Knight">
+              </div>
+              <div class="hero col">
+                <img src="./images/elf.png" alt="Elf">
+              </div>
+              <div class="hero col">
+                <img src="./images/dwarf.jpg" alt="Dwarf">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="chosen-hero">
-          <!-- Add chosen hero here -->
-        </div>
-        <button class="btn btn-primary attack" type="button" name="button">Attack</button>
-        <span class="health">Hero Health: </span><span  class="health" id="hero-health"></span>
-      </section>
-      <section class="col enemy-list">
-        <div class="enemy col">
-          <a href="#"><img src="./images/orc.png" alt="Orc"></a>
-        </div>
-        <div class="enemy col">
-          <a href="#"><img src="./images/dragon.png" alt="Dragon"></a>
-        </div>
-        <div class="enemy col">
-          <a href="#"><img src="./images/sauron.png" alt="Sauron"></a>
-        </div>
-        <span class="health">Enemy Health: </span><span class="health" id="enemy-health"></span>
-      </section>
+          <div class="chosen-hero">
+            <!-- Add chosen hero here -->
+          </div>
+          <button class="btn btn-primary attack" type="button" name="button">Attack</button>
 
-      <audio src="/http://openmusicarchive.org/audio/Eddies_Twister.mp3" controls>
-        <embed
-		         src="/http://openmusicarchive.org/audio/Eddies_Twister.mp3"
-		            width="2"
-		            height="0"
-	            	loop="true"
-		            autostart="true">
-</audio>
+        </section>
+        <section class="enemy-list">
+          <div class="enemy">
+            <a href="#"><img src="./images/orc.png" alt="Orc"></a>
+          </div>
+          <div class="enemy">
+            <a href="#"><img src="./images/dragon.png" alt="Dragon"></a>
+          </div>
+          <div class="enemy">
+            <a href="#"><img src="./images/sauron.png" alt="Sauron"></a>
+          </div>
+
+        </section>
+      </div>
+      <footer id="fight" class=" d-flex">
+        <span class="health">Hero Health:</span><span  class="health" id="hero-health"></span>
+        <span class="health">Enemy Health:</span><span class="health" id="enemy-health"></span>
+        <!-- <audio src="/http://openmusicarchive.org/audio/Eddies_Twister.mp3" controls>
+          <embed
+               src="/http://openmusicarchive.org/audio/Eddies_Twister.mp3"
+                  width="2"
+                  height="0"
+                  loop="true"
+                  autostart="true">
+        </audio> -->
+      </footer>
     </div>
+
+
+
 
     <script src="./main.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
