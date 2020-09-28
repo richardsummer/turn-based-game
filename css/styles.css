@@ -1,0 +1,27 @@
+body {
+  background: url(./../images/battlefield.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 900;
+  color: white;
+}
+
+img {
+  width: 120px;
+}
+
+.health {
+  font-size: 25px;
+  color: white;
+  font-weight: 800;
+}
+
+#fight {
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=styles.css.map */
